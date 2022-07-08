@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint para Web</title>
+
+    <!-- <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     -->
+     <script src="https://kit.fontawesome.com/d5ca87fc40.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+        body{
+            background-color: #25006b;
+            color: white;
+            font-family:monospace;
+        }
+        p{
+            text-align: center;
+        }
+        strong{
+            background-color: greenyellow;
+        }
+        .button {
+        color: black;
+        padding: 8px 8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+        </style>
+        </head>
+<body>
+    <canvas width="1235" height="400" id="area_dibujo" style="border: 1px solid black; background-color: white;"></canvas>
+    <p></p>
+    <p><button class="button" id="boton_dibujar">
+        <i class="fa-solid fa-pen"></i>
+    </button>
+    <button class="button" id="boton_borrar">
+        <i class="fa-solid fa-eraser"></i>
+    </button>
+    <button class="button" id="boton_clear">
+        <i class="fa-solid fa-trash"></i>
+    </button></p>
+    <p>Color: <input type="color" id="seleccionar_color">&nbsp&nbsp&nbsp Grosor:<input type="range" id="valor_grosor" step="0.1" min="0.1" max="10" value="0.5"></p>
+    <p>Fondo: <input type="color" id="seleccionar_colorFondo" value=#FFFFFF></p>
+
+
+    
+    <p>Mueve tu mouse para dibujar.</p>
+    <script src="codigo_teclas.js"></script>
+
+</body>
+</html>
